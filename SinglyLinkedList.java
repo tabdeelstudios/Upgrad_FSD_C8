@@ -58,6 +58,18 @@ class SinglyLinkedList{
         System.out.println();
     }
 
+    void searchList(SinglyLinkedList list, int key)
+    {
+        Node temp = list.head;
+        while(temp!=null)
+        {
+            if(key == temp.data)
+                System.out.println("Found!");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
     void deleteNode(SinglyLinkedList list, int key)
     {
         Node temp = list.head;
@@ -107,5 +119,6 @@ public class Main {
         myList.printList(myList);
         myList.deleteNode(myList, 100);
         myList.printList(myList);
+        myList.searchList(myList, 2000);
     }
 }
