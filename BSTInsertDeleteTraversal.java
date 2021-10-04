@@ -106,6 +106,20 @@ class BinarySearchTree{
         }
     }
 
+    public boolean search(Node node, int key)
+    {
+        while(root != null)
+        {
+            if(key > root.data)
+                root = root.right;
+            else if(key < root.data)
+                root = root.left;
+            else
+                return true;
+        }
+        return false;
+    }
+
     public void inOrder(Node node)
     {
         if(root == null) {
@@ -120,7 +134,6 @@ class BinarySearchTree{
             if(node.right != null)
                 inOrder(node.right);
         }
-
     }
 }
 
@@ -139,5 +152,11 @@ public class Main {
         myTree.delete(myTree.root, 72);
         System.out.println();
         myTree.inOrder(myTree.root);
+        System.out.println();
+        //Searching for 99
+        if(myTree.search(myTree.root, 127))
+            System.out.println("99 found!");
+        else
+            System.out.println("99 not found!");
     }
 }
