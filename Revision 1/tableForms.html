@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables and Forms in HTML5</title>
+</head>
+<body>
+    <!-- <table border="1">
+        <caption>Table : Top 5 IPL run-scorers</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Animal</th>
+                <th>Thing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Chetan Surname</td>
+                <td>Chennai</td>
+                <td rowspan="2">Cheetah</td>
+            </tr>
+            <tr>
+                <td>Chetan</td>
+                <td>Chennai</td>
+                <td>Cup</td>
+            </tr>
+            <tr>
+                <td>Chetan</td>
+                <td>Chennai</td>
+                <td>Cheetah</td>
+                <td>Cup</td>
+            </tr>
+            <tr>
+                <td>Chetan</td>
+                <td>Chennai</td>
+                <td>Cheetah</td>
+                <td>Cup</td>
+            </tr>
+            <tr>
+                <td>Chetan</td>
+                <td>Chennai</td>
+                <td>Cheetah</td>
+                <td>Cup</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <form method="POST" action="#">
+        <div>
+            <label for="user_name">Username : </label>
+            <input type="text" id="user_name" name="user_name" placeholder="First Name"/>
+        </div>
+        <hr>
+        <div>
+            <label for="user_phone">Mobile : +91</label>
+            <input type="text" id="user_phone" name="user_phone" minlength="10" maxlength="10" placeholder="9876543210"/>
+        </div>
+        <hr>
+        <div>
+            <label for="user_dob">Date of Birth : </label>
+            <input type="date" id="user_dob"/>
+        </div>
+        <hr>
+        <div>
+            <label for="user_time">Time : </label>
+            <input type="time" id="user_time" />
+        </div>
+        <hr>
+        <div>
+            <label for="user_color">Color : </label>
+            <input type="color" id="user_color">
+        </div>
+        <hr>
+        <div>
+            <label for="user_rating">Rating : </label>
+            <input type="range" id="user_rating" min="0" max="10" />
+        </div>
+        <hr>
+        <div>
+            <label for="user_email">Email : </label>
+            <input type="email" id="user_email">
+        </div>
+        <hr>
+        <div>
+            <p><input type="checkbox" checked /> I agree to all terms.</p>
+        </div>
+        <hr>
+        <div>
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_male" name="user_gender"/>
+            <label for="gender_female">Female</label>
+            <input type="radio" id="gender_female"  name="user_gender"/>
+            <label for="gender_other">Other</label>
+            <input type="radio" id="gender_other" name="user_gender"/>
+        </div>
+        <hr>
+        <div>
+            <label for="user_pwd">Password : </label>
+            <input type="password" minlength="8" placeholder="Password here" maxlength="16"/>
+        </div>
+        <hr>
+        <div>
+            <label for="user_city">City : </label>
+            <select id="user_city">
+                <option value="city_chennai">Chennai</option>
+                <option selected value="city_mumbai">Mumbai</option>
+                <option value="city_bangalore">Bangalore</option>
+                <option value="city_kolkata">Kolkata</option>
+            </select>
+        </div>
+        <div>
+            <label for="user_address">Address : </label>
+            <textarea cols="30" rows="5" id="user_address"></textarea>
+        </div>
+        <input type="submit" value="Click Here">
+        <input type="reset">
+    </form>
+</body>
+</html>
