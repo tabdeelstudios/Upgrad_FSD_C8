@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>Session 4</title>
+        <link rel="stylesheet" type="text/css" href="session4style.css">
+        <style type="text/css"> 
+            #id_h3{
+                color: red;
+            }
+            .class_h3{
+                color: blue;
+            }
+            h3{
+                color: purple;
+            }
+            p{
+                color: cyan;
+            }
+        </style> 
+    </head> 
+  
+    <body> 
+        <h3 id="id_h3" class="class_h3"> 
+            Id selector has the highest priority when compared to class and element selector
+        </h3> 
+        <h3 class="class_h3"> 
+            Class selector has higher priority than Element selector. 
+        </h3>
+        <h3> 
+            Element selector has least priority. 
+        </h3>
+        <p style="color: yellow;" id="id_p" class="class_p"> 
+            Inline CSS has higher priority than any other CSS selector.    
+        </p> 
+        <p>
+            External Stylesheet has least priority
+        </p>
+    </body> 
+</html> 
