@@ -1,0 +1,135 @@
+body, ul{
+    margin:0;
+}
+
+/* Navbar Style */
+
+ul{
+    list-style: none;
+    width: 900px;
+    margin: 0 auto;
+}
+
+li{
+    display: inline;
+}
+
+nav{
+    background-color: #1b4269;
+    padding: 20px;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-family: 'Roboto';
+}
+
+/* Background image header */
+header{
+    background-image: url('assets/images/header_bg.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+/* Header */
+#header_div{
+    background-color: rgba(255,255,255,0.6);
+    padding: 100px;
+    text-align: center;
+}
+
+h1{
+    color: #1b4269;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 36px;
+}
+
+section h1{
+    font-size: 32px;
+}
+
+h3{
+    color: #1b4269;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+button{
+    background-color: #1b4269;
+    color: white;
+    font-size: 18px;
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Text Ideas section */
+#text_ideas, #photo_ideas, #podcast_ideas, #reel_ideas{
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
+.text, .photo, .reel, .podcast{
+    display: inline-block;
+    max-width: 350px;
+    padding: 20px;
+}
+
+hr{
+    max-width: 20%;
+    margin-left: 0px;
+    border-top: 5px solid #1b4269;
+}
+
+/* Reel Ideas */
+
+.reel video{
+    height: 200px;
+    width: 350px;
+}
+
+/* Community */
+
+#community{
+    background-color: #1b4269;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#community p{
+    max-width: 50%;
+    margin-left: 25%;
+    color: white;
+    font-family: 'Roboto';
+}
+
+#community button{
+    background-color: white;
+    color: #1b4269;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 14px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer hr{
+    color: black;
+    max-width: 100%;
+    margin: 20px 0px;
+}
+
+footer a{
+    color: black;
+    margin: 20px;
+}
